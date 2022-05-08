@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ray's Personal Website</title>
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		<script src="https://kit.fontawesome.com/74a2aeb3f7.js" crossorigin="anonymous"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="../css/style.css">
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+					<li class="nav__item"><a href="../index.html#services" class="nav__link">My Services</a></li>
+					<li class="nav__item"><a href="../index.html#about" class="nav__link">About me</a></li>
+					<li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="intro">
+			<h1 class="section__title section__title--intro">
+				<strong>Chatroom App</strong>
+			</h1>
+			<p class="section_subtitle section__subtitle--intro">Chat with other users in real-time!</p>
+			<img src="../img/projects/project-chatroom.png" alt="Chatroom project image" class="intro__img">
+		</section>
+
+		<div class="project-item-individual">
+			<p>Before I use Django for my server-side framework, I first learned to use Ruby on Rails to develop my first-ever web app. My first project with Ruby on Rails is a chatroom app that allows the users to chat in real-time by using the WebSocket Protocol. This protocol facilitates a real-time, full-duplex communication between chatroom users. First an user will send their chat message to the chatroom server. After the server receives the message, it broadcasts the message to any other users who are listening. As the result, the user's message will be displayed instantly on the chatroom without the need to reload the page.</p>
+			<p>This chatroom comes with a login page, a sign-up page, and data authentication process to secure user's personal data. Please take a look at my chatroom and sign up for an account through the following link: <a href="http://message-me-6.herokuapp.com/login">MessageMe App</a></p>
+			<a href="https://github.com/raystrife/message_me" class="btn project__button" target="_blank">See my repository</a>
+		</div>
+		
+		<footer class="footer">
+			<a href="mailto:ra2nugro@uwaterloo.ca" class="footer__link">ra2nugro@uwaterloo.ca</a>
+			<ul class="social-list">
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.linkedin.com/in/ray-nugroho/" target="_blank">
+						<i class="fa-brands fa-linkedin"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://www.facebook.com/ray.adrian.319" target="_blank">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+				</li>
+				<li class="social-list__item">
+					<a class="social-list__link" href="https://github.com/raystrife/" target="_blank">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+		<script src="../js/index.js"></script>
+
+	</body>
+</html>
